@@ -1,0 +1,45 @@
+h1{
+  margin-bottom: 50px;
+  color: #216363;
+  text-align: center;
+}
+body{
+  background-image: linear-gradient(to left,#EEF4F4,white);
+  font-family: sans-serif;
+  margin: 30px;
+  color: #25615D;
+  border-style: groove;
+  border-color: #11999E;
+}
+h3{
+  color: #11999E;
+  text-align: center;
+  font-size: 25px;
+}
+h4{
+  color: #11999E;
+}
+a{
+  color: #619F64;
+}
+a:hover{
+  color: #808080;
+}
+.example{
+  margin-left: 20px;
+  font-family: monospace;
+  font-size: 20px;
+}
+.container{
+  margin: 15px;
+}
+.back {
+  text-align: center;
+  padding-top:  50px;
+
+  font-size: 15px;
+  font-weight: bold;
+}
+.back a{
+  color: #25615D;
+}

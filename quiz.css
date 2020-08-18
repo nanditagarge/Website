@@ -1,0 +1,59 @@
+h1,p{
+  text-align: center;
+  color: #0E3D5F;
+
+}
+.all{
+  margin: 15px 120px;
+  border: 5px;
+  border-style: groove;
+  border-color: #0E3D5F;
+  font-family: sans-serif;
+  background-color: white;
+}
+.mcq{
+  margin-left: 40px;
+  margin-top: 100px;
+  color: #338E94;
+}
+li{
+  padding-bottom: 5px;
+}
+.ques{
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #0E3D5F;
+}
+.box{
+  margin-left: 22px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.btn{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.btn button:hover{
+  background-color: #619F64;
+  color: white;
+}
+.bulb img{
+  float: right;
+  width: 450px;
+  height: 600px;
+  padding-top: 50px;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+.back {
+  text-align: center;
+  padding-top:  30px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.back a{
+  color: #25615D;
+}

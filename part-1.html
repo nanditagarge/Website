@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Part-1</title>
+  <link rel="stylesheet" href="part-1.css">
+</head>
+<body>
+  <div class="container">
+    <div class="skills">
+      <h1>CSS Part - 1</h1>
+      <div class="topic">
+        <h3 class="parts">Inline Styles</h3>
+        <p>Inline styles in CSS could be useful for previewing changes instantly or adding CSS rules to only one or two elements. When you don't have access to your . css file, knowing how inline style CSS works can be convenient.</p>
+        <p>Inline styles are defined within the "style" attribute of the relevant element</p>
+        <div class="example">
+          <h4>Example : </h4>
+          <p>&lt;h1 style="color:navy;text-align:center;">Hello world &lt;/h1&gt; </p>
+              <p>
+                &lt;p style="color:yellow;">Hello world. &lt;/p&gt;
+              </p>
+              <a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a>
+        </div>
+        </div>
+      <div class="topic">
+        <h3 class="parts">Internal Style Sheet</h3>
+        <p>An internal stylesheet holds CSS rules for the page in the head section of the HTML file. The rules only apply to that page, but you can configure CSS classes and IDs that can be used to style multiple elements in the page code.</p>
+        <div class="example">
+          <h4>Example : </h4>
+          <p>
+            &lt;style&gt;
+            <br>
+  body {
+    background-color: linen;
+  }
+  <br>
+  h1 {
+    color: maroon;
+    margin-left: 40px;
+  }
+  <br>
+  &lt;/style&gt;
+  <br>
+  &lt;h1>This is a heading&lt;/h1&gt;
+  <br>
+  &lt;p>This is a paragraph.&lt;/p&gt;
+              </p>
+              <a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a>
+
+        </div>
+        </div>
+        <div class="topic">
+          <h3 class="parts">External Style Sheet</h3>
+          <p>An external style sheet is a file with a . css extension that contains CSS style definitions for your webpage. It completely separates the CSS styles from the HTML document making it easy to reuse and maintain.</p>
+          <div class="example">
+            <h4>Example : </h4>
+            <p>&lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt; </p>
+                <p>
+                  &lt;h1>This is a heading&lt;/h1&gt;
+                  <br>
+                  &lt;p>This is a paragraph.&lt;/p&gt;
+                </p>
+                <h5>CSS :</h5>
+                <p>body {
+  background-color: lightblue;
+}
+<br>
+h1 {
+  color: navy;
+  margin-left: 20px;
+}</p>
+                <a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a>
+          </div>
+          </div>
+          <div class="topic">
+            <h3 class="parts">Selectors</h3>
+            <p>CSS selectors are used to find the HTML elements you want to style.</p>
+            <div class="example">
+              <h4>Example : </h4>
+              <p>&lt;p>This is a universal selector.&lt;/p&gt; </p>
+              <h5>CSS :</h5>
+              <p>* {
+text-align: center;
+color: blue;
+}</p>
+                  <a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a>
+            </div>
+            </div>
+
+            <div class="topic">
+              <h3 class="parts">Colors</h3>
+              <p>Colors can be of different types in CSS (Background, text, border etc)</p>
+              <div class="example">
+                <h4>Example : </h4>
+                <p>&lt;p style="background-color:Tomato;">Hakuna matata!!!!&lt;/p&gt; </p>
+                <p>&lt;p style="color:MediumSeaGreen;">Hakuna matata!!!!&lt;/p&gt;</p>
+                    <a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a>
+              </div>
+              </div>
+              <div class="topic">
+        <h3 class="parts">Background</h3>
+        <p>The background-image property specifies an image to use as the background of an element</p>
+        <p>The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page):</p>
+        <div class="example">
+          <h4>Example : </h4>
+          <p>body {
+  background-image: url("paper.png");
+  <br>
+  background-attachment: fixed;
+}
+              </p>
+              <a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a>
+        </div>
+        </div>
+
+
+<div class="topic">
+        <h3 class="parts">Borders</h3>
+        <p>The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
+        <div class="example">
+          <h4>Example : </h4>
+          <p>&lt;p&gt;Hello world &lt;/p&gt; </p>
+          <h5>CSS : </h5>
+          <p>p.solid {border-style: solid;}</p>
+              <a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a>
+        </div>
+        </div>
+
+    </div>
+    <div class="back">
+        <a href="index.html">&gt; Home &lt;</a>
+    </div>
+  </div>
+
+</body>
+</html>
