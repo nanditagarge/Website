@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<header>
+        <link rel="stylesheet" type="text/css" href="part-2.css">
+<img src="images/iiit.png" alt="Smiley face" style="float:left;width:150px;height:140px;">
+  <h1 class="part">CSS PART-4 </h1>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Part-4</title>
+  <link rel="stylesheet" href="part-2.css">
+</header>
+</head>
+<body>
+  <div class="topnav">
+    <a href="#1">Attribue Selector</a>
+    <a href="#2">Forms</a>
+    <a href="#3">Counters</a>
+    <a href="#4">Website Layout</a>
+    <a href="#5">Units</a>
+    <a href="#6">Specificity</a>
+    <a href="#7">Text effect</a>
+    <a href="#8">Animation</a>
+    <a href="#9">Tooltips</a>
+    <a href="#10">Multiple Columns</a>
+</div>
+
+  <div class="container">
+    <div class="skills">
+            <a name="1"></a>
+      <div class="topic">
+        <h2 class="parts">Attribute Selector</h2>
+        <p>The CSS Attribute Selector is used to select an element with some specific attribute or attribute value. It is an excellent way to style the HTML elements by grouping them based on some specific attributes and the attribute selector will select those elements with similar attributes</p>
+        <div class="example">
+          <h3>Example:</h3>
+            <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/4-1.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+          <p>&lt;head&gt;</p>
+<p>&lt;style&gt;</p>
+<p>[class|=content] {</p>
+  <p>background: lightblue;</p>
+<p>}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+
+<p>&lt;h1 class="content-1">HELLO WORLD!!!&lt;/h1&gt;</p>
+<p>&lt;p class="contents">This is a tutorial.&lt;/p&gt;</p>
+<p>&lt;/body&gt;</p>
+
+
+      <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+      </div>
+      </div>
+            <a name="2"></a>
+      <div class="topic">
+        <h2 class="parts">Forms</h2>
+        <p>CSS form is used to create interactive form for user.The attribute type of the input form can take a variety of form depending on user's choice like email, date pickers, number etc</p>
+        <div class="example">
+          <h3>Example:</h3>
+            <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/4-2.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+          <p>&lt;head&gt;</p>
+<p>&lt;style&gt;</p>
+<p>input {</p>
+  <p>width: 50%;</p>
+<p>}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;form&gt;</p>
+  <p>&lt;label for="fname"&gt;email-id&lt;/label&gt;</p>
+  <p>&lt;input type="text" id="fname" name="fname"&gt;</p>
+  <p>&lt;input type="submit" value="Submit"&gt;</p>
+<p>&lt;/form&gt;</p>
+
+<p>&lt;/body&gt;</p>
+
+
+      <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+      </div>
+      </div>
+            <a name="3"></a>
+      <div class="topic">
+        <h2 class="parts">Counters</h2>
+        <p>CSS counters are similar to variables. The variable values can be incremented by CSS rules.
+
+</p>
+        <div class="example">
+          <h3>Example:</h3>
+            <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/4-3.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+          <p>&lt;head&gt;</p>
+<p>&lt;style&gt;</p>
+<p>body {</p>
+  <p>counter-reset: part;</p>
+<p>}</p>
+
+<p>h2::before {</p>
+  <p>counter-increment: part;</p>
+  <p>content: "Part " counter(part) ": ";</p>
+<p>}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;h2&gt;CSS Part 1&lt;/h2&gt;</p>
+<p>&lt;h2&gt;CSS Part 2&lt;/h2&gt;</p>
+<p>&lt;h2&gt;CSS Part 3&lt;/h2&gt;</p>
+<p>&lt;h2&gt;CSS Part 4&lt;/h2&gt;</p>
+<p>&lt;/body&gt;</p>
+
+      <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+      </div>
+      </div>
+            <a name="4"></a>
+      <div class="topic">
+        <h2 class="parts">Website Layout</h2>
+        <p>A website can be divided into various sections comprising of header, menus, content and footer based on which there are many different layout design available for developer.</p>
+        <div class="example">
+          <h3>Example:</h3>
+            <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/4-4.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+          <p>&lt;style&gt;</p>
+<p>body {</p>
+  <p>margin: 0;</p>
+<p>}</p>
+<p>.header {</p>
+  <p>background-color:yellow;</p>
+  <p>padding: 50px;</p>
+  <p>text-align: left;</p>
+<p>}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;body&gt;</p>
+
+<p>&lt;div class="header"&gt;</p>
+  <p>&lt;h1&gt;HELLO WORLD!!!&lt;/h1&gt;</p>
+<p>&lt;/div&gt;</p>
+
+<p>&lt;/body&gt;</p>
+
+
+      <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+      </div>
+      </div>
+            <a name="5"></a>
+      <div class="topic">
+        <h2 class="parts">Units</h2>
+        <p>A CSS unit determines the size of a property you're setting for an element or its content. For example, if you wanted to set the property margin of a paragraph, you would give it a specific value. This value includes the CSS unit.</p>
+        <div class="example">
+          <h3>Example:</h3>
+            <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/4-5.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+          <p>&lt;head&gt;</p>
+<p>&lt;style&gt;</p>
+<p>h1 {font-size: 3cm;}</p>
+<p>h2 {font-size: 2cm;}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+
+<p>&lt;h1&gt;This is a paragraph&lt;/h1&gt;</p>
+<p>&lt;h2&gt;This is a paragraph&lt;/h2&gt;</p>
+<p>&lt;/body&gt;</p>
+
+
+      <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+      </div>
+      </div>
+            <a name="6"></a>
+      <div class="topic">
+        <h2 class="parts">Specificity</h2>
+        <p>Specificity is a weight that is applied to a given CSS declaration, determined by the number of each selector type in the matching selector.As per CSS rules, directly targeted elements will always take precedence over rules which an element inherits from its ancestor.</p>
+        <div class="example">
+          <h3>Example:</h3>
+            <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/4-6.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+          <p>&lt;head&gt;</p>
+<p>&lt;style&gt;</p>
+<p>h1 {background-color: blue;}</p>
+<p>h1 {background-color: green;}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+
+<p>&lt;h1&gt;This is a paragraph&lt;/h1&gt;</p>
+
+<p>&lt;/body&gt;</p>
+
+
+      <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+      </div>
+      </div>
+            <a name="7"></a>
+      <div class="topic">
+        <h2 class="parts">Text Effect</h2>
+        <p>There are various text effects like text-overflow,word-break,writing-mode</p>
+        <div class="example">
+          <h3>Example:</h3>
+            <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/4-7.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+          <p>&lt;head&gt;</p>
+<p>&lt;style&gt;</p>
+<p>div.test {</p>
+  <p>white-space: nowrap;</p>
+  <p>width: 60px;</p>
+  <p>overflow: hidden;</p>
+  <p>border: 2px solid ;</p>
+<p>}</p>
+
+<p>div.test:hover {</p>
+  <p>overflow: visible;</p>
+<p>}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;div class="test" style="text-overflow:ellipsis;"&gt;This is a text.&lt;/div&gt;</p>
+<p>&lt;/body&gt;</p>
+
+
+      <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+      </div>
+      </div>
+            <a name="8"></a>
+      <div class="topic">
+        <h2 class="parts">Animation</h2>
+        <p>An animation lets an element gradually change from one style to another. You can change as many CSS properties you want, as many times you want. To use CSS animation, you must first specify some keyframes for the animation. Keyframes hold what styles the element will have at certain times.</p>
+        <div class="example">
+          <h3>Example:</h3>
+            <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/4-8.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+          <p>&lt;head&gt;</p>
+<p>&lt;style&gt;</p>
+<p>div {</p>
+  <p>width: 80px;</p>
+  <p>height: 80px;</p>
+  <p>background-color: red;</p>
+  <p>animation-name: text;</p>
+  <p>animation-duration:10s;</p>
+<p>}</p>
+
+<p>@keyframes text {</p>
+  <p>from {background-color: red;}</p>
+  <p>to {background-color: yellow;}</p>
+<p>}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;div&gt;HELLO WORLD!!!!&lt;/div&gt;</p>
+<p>&lt;/body&gt;</p>
+
+
+      <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+      </div>
+      </div>
+            <a name="9"></a>
+      <div class="topic">
+        <h2 class="parts">Tool Tips</h2>
+        <p>A tooltip is often used to specify extra information about something when the user moves the mouse pointer over an element</p>
+        <div class="example">
+          <h3>Example:</h3>
+            <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/4-9.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+          <p>&lt;style&gt;</p>
+<p>.tooltip {</p>
+  <p>position: relative;</p>
+  <p>display: inline-block;</p>
+  <p>border-bottom: 1px solid black;</p>
+<p>}</p>
+
+<p>.tooltip .tooltiptext {</p>
+<p>visibility: hidden;</p>
+  <p>width: 80px;</p>
+  <p>background-color: blue;</p>
+  <p>color: #fff;</p>
+<p>}</p>
+
+<p>.tooltip:hover .tooltiptext {</p>
+  <p>visibility: visible;</p>
+<p>}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;div class="tooltip"&gt;Tooltip1</p>
+  <p>&lt;span class="tooltiptext"&gt;Tooltip2&lt;/span&gt;</p>
+<p>&lt;/div&gt;</p>
+
+
+      <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+      </div>
+      </div>
+            <a name="10"></a>
+      <div class="topic">
+        <h2 class="parts">Multiple Columns</h2>
+        <p>The general idea of multicolumn, is that you can take a chunk of content and flow it into multiple columns.The column-count property specifies the number of columns that you would like the content to break into.</p>
+        <div class="example">
+          <h3>Example:</h3>
+            <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/4-10.png" style="width:250px;height:250px;float:left;"> 
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+          <p>&lt;head&gt;</p>
+<p>&lt;style&gt;</p>
+<p>.text {</p>
+  <p>column-count: 4;</p>
+  <p>column-gap:40px</p>
+<p>}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+
+<p>&lt;div class="text"&gt;</p>
+<p>Coronavirus disease 2019 is an infectious disease caused by severe acute respiratory syndrome coronavirus.As, researchers know that the new coronavirus is spread through droplets released into the air when an infected person coughs or sneezes. The droplets generally do not travel more than a few feet, and they fall to the ground in a few seconds this is why physical distancing is effective in preventing the spread.</p>
+<p>&lt;/div&gt;</p>
+
+<p>&lt;/body&gt;</p>
+
+
+      <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="back">
+        <a href="index.html">&gt; Home &lt;</a>
+    </div>
+  <footer>© 2020 Aradhana Das & Nanditha Garge. All rights reserved</footer>
+</body>
+</html>

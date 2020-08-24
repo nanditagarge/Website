@@ -1,22 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<header>
+        <link rel="stylesheet" type="text/css" href="part-2.css">
+<img src="images/iiit.png" alt="Smiley face" style="float:left;width:150px;height:140px;">
+  <h1 class="part">CSS PART-1 </h1>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Part-1</title>
-  <link rel="stylesheet" href="part-1.css">
+  <link rel="stylesheet" href="part-2.css">
+</header>
 </head>
 <body>
+  <div class="topnav">
+    <a href="#1">Inline Style</a>
+    <a href="#2">Internal style sheet</a>
+    <a href="#3">External style sheet</a>
+    <a href="#4">Selectors</a>
+    <a href="#5">Colors</a>
+    <a href="#6">Background</a>
+    <a href="#7">Border</a>
+</div>
   <div class="container">
     <div class="skills">
-      <h1>CSS Part - 1</h1>
+      <a name="1"></a>
       <div class="topic">
-        <h3 class="parts">Inline Styles</h3>
-        <p>Inline styles in CSS could be useful for previewing changes instantly or adding CSS rules to only one or two elements. When you don't have access to your . css file, knowing how inline style CSS works can be convenient.</p>
-        <p>Inline styles are defined within the "style" attribute of the relevant element</p>
+        <h2 class="parts">Inline Styles</h2>
+        <p>Inline styles in CSS could be useful for previewing changes instantly or adding CSS rules to only one or two elements. When you don't have access to your
+          <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/1-1.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div> . css file, knowing how inline style CSS works can be convenient.Inline styles look and operate much like CSS, with a few differences. Inline styles directly affect the tag they are written in, without the use of selectors.Inline styles are defined within the "style" attribute of the relevant element</p>
         <div class="example">
-          <h4>Example : </h4>
+          <h3>Example : </h3>
+                  <!--<div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "1-1.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div> -->
           <p>&lt;h1 style="color:navy;text-align:center;">Hello world &lt;/h1&gt; </p>
               <p>
                 &lt;p style="color:yellow;">Hello world. &lt;/p&gt;
@@ -24,11 +59,23 @@
               <a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a>
         </div>
         </div>
+        <a name="2"></a>
       <div class="topic">
-        <h3 class="parts">Internal Style Sheet</h3>
+        <h2 class="parts">Internal Style Sheet</h2>
         <p>An internal stylesheet holds CSS rules for the page in the head section of the HTML file. The rules only apply to that page, but you can configure CSS classes and IDs that can be used to style multiple elements in the page code.</p>
         <div class="example">
-          <h4>Example : </h4>
+          <h3>Example : </h3>
+                  <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/1-2.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
           <p>
             &lt;style&gt;
             <br>
@@ -51,12 +98,26 @@
 
         </div>
         </div>
+        <br>
+        <br>
+        <a name="3"></a>
         <div class="topic">
-          <h3 class="parts">External Style Sheet</h3>
+          <h2 class="parts">External Style Sheet</h2>
           <p>An external style sheet is a file with a . css extension that contains CSS style definitions for your webpage. It completely separates the CSS styles from the HTML document making it easy to reuse and maintain.</p>
           <div class="example">
-            <h4>Example : </h4>
-            <p>&lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt; </p>
+            <h3>Example : </h3>
+                    <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/1-3.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+<p>&lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt; </p>
                 <p>
                   &lt;h1>This is a heading&lt;/h1&gt;
                   <br>
@@ -74,12 +135,38 @@ h1 {
                 <a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a>
           </div>
           </div>
+        <br>
+        <br>
+
+          <a name="4"></a>
           <div class="topic">
-            <h3 class="parts">Selectors</h3>
+            <h2 class="parts">Selectors</h2>
             <p>CSS selectors are used to find the HTML elements you want to style.</p>
+                                  <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/1-4.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
             <div class="example">
-              <h4>Example : </h4>
-              <p>&lt;p>This is a universal selector.&lt;/p&gt; </p>
+              <h3>Example : </h3>
+                      <!--<div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "1-4.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div> -->
+              <p>&lt;p&gt;This is a universal selector.&lt;/p&gt; </p>
               <h5>CSS :</h5>
               <p>* {
 text-align: center;
@@ -88,51 +175,143 @@ color: blue;
                   <a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a>
             </div>
             </div>
-
+            <br>
+            <br>
+<a name="5"></a>
             <div class="topic">
-              <h3 class="parts">Colors</h3>
-              <p>Colors can be of different types in CSS (Background, text, border etc)</p>
+              <h2 class="parts">Colors</h2>
+              <p>Colors can be of different types in CSS (Background, text, border etc).These are used to set a color either for the foreground of an element (i.e., its text) or else for the background of the element. They can also be used to affect the color of borders and other decorative effects.</p>
+                                      <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/1-5.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
               <div class="example">
-                <h4>Example : </h4>
+                <h3>Example : </h3>
+                        <!--<div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "1-5.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div> -->
                 <p>&lt;p style="background-color:Tomato;">Hakuna matata!!!!&lt;/p&gt; </p>
                 <p>&lt;p style="color:MediumSeaGreen;">Hakuna matata!!!!&lt;/p&gt;</p>
                     <a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a>
+                    <br>
               </div>
               </div>
+              <br>
+              <br>
+              <br>
+              <a name="6"></a>
               <div class="topic">
-        <h3 class="parts">Background</h3>
+        <h2 class="parts">Background</h2>
         <p>The background-image property specifies an image to use as the background of an element</p>
         <p>The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page):</p>
+
         <div class="example">
-          <h4>Example : </h4>
-          <p>body {
-  background-image: url("paper.png");
-  <br>
-  background-attachment: fixed;
-}
-              </p>
-              <a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a>
-        </div>
+          <h3>Example : </h3>
+                  <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/1-6.png" style="width:250px;height:250px;float:left;">
         </div>
 
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+          <p>&lt;head&gt;</p>
+<p>&lt;style&gt;</p>
+<p>h2 {
+  background-color:blue;
+}</p>
+
+<p>div {
+  background-color: lightgreen;
+}</p>
+
+<p>p {
+  background-color: lightblue;
+}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+
+<p>&lt;h2&gt;CSS TUTORIAL&lt;/h2&gt;</p>
+<p>&lt;div&gt;</p>
+<p>Hello World.</p>
+<p>&lt;p&gt;This is a paragraph.&lt;/p&gt;</p>
+<p>&lt;/div&gt;</p>
+
+<p>&lt;/body&gt;</p>
+              <a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a>
+              <br>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+<a name="7"></a>
 
 <div class="topic">
-        <h3 class="parts">Borders</h3>
-        <p>The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
+        <h2 class="parts">Borders</h2>
+        <p>The border properties allow you to specify how the border of the box representing an element should look. There are three properties of a border you can change −
+
+The border-color specifies the color of a border.
+
+The border-style specifies whether a border should be solid, dashed line, double line, or one of the other possible values.
+
+The border-width specifies the width of a border.
+
+</p>
         <div class="example">
-          <h4>Example : </h4>
-          <p>&lt;p&gt;Hello world &lt;/p&gt; </p>
-          <h5>CSS : </h5>
-          <p>p.solid {border-style: solid;}</p>
+          <h3>Example : </h3>
+                  <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/1-7.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+          <p>&lt;head&gt;</p>
+<p>&lt;style&gt;</p>
+<p>p.mix {border-style: dotted dashed solid double;}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;p class="mix"&gt;CSS TUTORIAL.&lt;/p&gt;</p>
+
+</body>
               <a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a>
         </div>
         </div>
 
     </div>
-    <div class="back">
-        <a href="index.html">&gt; Home &lt;</a>
-    </div>
   </div>
+  <br>
+  <br>
+  <br>
+    <div class="back">
+        <center><a href="index.html">&gt; Home &lt;</a></center>
+    </div>
+  <footer>© 2020 Aradhana Das & Nanditha Garge. All rights reserved</footer>
 
 </body>
 </html>

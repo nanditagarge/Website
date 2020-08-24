@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <header>
+        <link rel="stylesheet" type="text/css" href="part-2.css">
+<img src="images/iiit.png" alt="Smiley face" style="float:left;width:150px;height:140px;">
+  <h1 class="part">CSS PART-2 </h1>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Part-2</title>
+  <link rel="stylesheet" href="part-2.css">
+</header>
+</head>
+<body>
+  <div class="topnav">
+    <a href="#1">Margins</a>
+    <a href="#2">Padding</a>
+    <a href="#3">Font</a>
+    <a href="#4">Links</a>
+    <a href="#5">Icons</a>
+    <a href="#6">Lists</a>
+    <a href="#7">Tables</a>
+    <a href="#8">Display</a>
+    <a href="#9">Position</a>
+    <a href="#10">Overflow</a>
+</div>
+
+  <div class="container">
+    <div class="skills">
+      <!--<h1>CSS Part - 2</h1>-->
+      <a name="1"></a>
+      <div class="topic">
+        <h2 class="parts">Margins</h2>
+        <p>The margin specifies a shorthand property for setting the margin properties in one declaration.The margin-bottom specifies the bottom margin of an element.The margin-left specifies the left margin of an element.The margin-right specifies the right margin of an element.</p>
+        <div class="example">
+
+
+    <!--<img class="gallery" src="2-1.png" alt="soln" >-->
+        <h3>Example: </h3>
+        <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/2-1.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+
+        &lt;p style = "margin-bottom: 20px; border:2px solid black;"&gt;
+         <p>Paragraph with a specified bottom margin</p>&lt;/p&gt;
+
+         <p>
+
+      &lt;p style = "margin-top: 20px; border:2px solid black;"&gt;</p>
+         <p>Paragraph with a specified top margin</p>&lt;/p&gt;
+         <p>
+
+      &lt;p style = "margin-left: 20px; border:2px solid black;"&gt;</p>
+         <p>Paragraph with a specified left margin</p>&lt;/p&gt;
+         <p>
+
+      &lt;p style = "margin-right: 20px; border:2px solid black;"&gt;</p>
+         <p>Paragraph with a specified right margin</p>&lt;/p&gt;
+            <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+      </div>
+    </div>
+    <a name="2"></a>
+      <div class="topic">
+        <h2 class="parts">Padding</h2>
+        <p>The padding-bottom specifies the bottom padding of an element.
+            The padding-top specifies the top padding of an element.
+            The padding-left specifies the left padding of an element.
+            The padding-right specifies the right padding of an element.
+            The padding serves as shorthand for the preceding properties.</p>
+            <div class="example">
+              <!--<img class="gallery" src="2-2.png" alt="soln" >-->
+            <h3>Example:</h3>
+            <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/2-2.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+            <p>&lt;p style = "padding-bottom: 20px; border:1px solid black;"&gt;</p>
+                <p>Paragraph with a specified bottom padding</p>
+           &lt;/p&gt;
+
+      <p>&lt;p style = "padding-top:20px; border:1px solid black;"&gt;</p>
+         <p>Paragraph with a specified top padding</p>
+      &lt;/p&gt;
+      <p>&lt;p style = "padding-left:20px; border:1px solid black;"&gt;</p>
+         <p>Paragraph with a specified left padding</p>
+      &lt;/p&gt;
+      <p>&lt;p style = "padding-right:20px; border:1px solid black;"&gt;</p>
+         <p>Paragraph with a specified right padding</p>
+      &lt;/p&gt;
+      <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+      </div>
+    </div>
+    <a name="3"></a>
+      <div class="topic">
+        <h2 class="parts">Fonts</h2>
+        <p>The font-family property is used to change the face of a font.The font-style property is used to make a font italic or oblique.The font-variant property is used to create a small-caps effect.The font-weight property is used to increase or decrease how bold or light a font appears.The font-size property is used to increase or decrease the size of a font.The font property is used as shorthand to specify a number of other font properties.</p>
+      <div class="example">
+
+        <h3>Example:</h3>
+        <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/2-3.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+        <p>&lt;p style = "font-family:Courier New,monospace;"&gt;</p>
+         <p>This is a paragraph</p>
+      &lt;/p&gt;
+      <p>&lt;p style = "font-style:oblique;"&gt;
+         <p>This is a paragraph</p>
+      &lt;/p&gt;
+      <p>&lt;p style = "font-variant:small-caps;"&gt;
+         <p>This is a paragraph</p>
+      &lt;/p&gt;
+      <p>&lt;p style = "font-weight:bolder;"&gt;</p>
+         <p>This is a paragraph</p>
+      &lt;/p&gt;
+      <p>&lt;p style = "font-size:small;"&gt;</p>
+         <p>This is a paragraph</p>
+      &lt;/p&gt;
+      <p>&lt;p style = "font:italic normal bold 20px georgia;"&gt;
+         <p>All properties are applied in this paragraph</p>
+      &lt;/p&gt;
+      <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+      </div>
+    </div>
+    <a name="4"></a>
+      <div class="topic">
+        <h2 class="parts">Links</h2>
+        <p>The :link signifies unvisited hyperlinks.The :visited signifies visited hyperlinks.The :hover signifies an element that currently has the user's mouse pointer hovering over it.The :active signifies an element on which the user is currently clicking.</p>
+            <div class="example">
+              <h3>Example:</h3>
+              <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/2-4.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+              <p>&lt;style&gt;</p>
+              <p>a:link {</p>
+                <p>color: yellow;</p>
+               <p>}</p>
+              <p>a:visited {</p>
+                <p>color: red;</p>
+               <p>}</p>
+              <p>a:hover {</p>
+               <p>color: green;</p>
+               <p>}</p>
+              <p>a:active {</p>
+                <p>color: blue;</p>
+              <p>}</p>
+              <p>&lt;/style&gt;</p>
+
+          <p>&lt;p&gt;&lt;b&gt;&lt;a href="default.asp" target="_blank"&gt;This is a link&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;</p>
+          <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+      </div>
+    </div>
+    <a name="5"></a>
+      <div class="topic">
+        <h2 class="parts">Icons</h2>
+        <p>An icon can be added to the HTML page by using an icon library, such as Font Awesome.Add the name of the specified icon class to any inline HTML element.
+</p>
+    <div class="example">
+      <h3>Example:</h3>
+      <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/2-5.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+      <p>&lt;head&gt;</p>
+<p>&lt;script src="https://kit.fontawesome.com/a076d05399.js"&gt;&lt;/script&gt;</p>
+<p>&lt;/head&gt;</p>
+      <p>&lt;i class="fas fa-spinner fa-spin"&gt;&lt;/i&gt;</p>
+      <p>&lt;i class="fas fa-circle-notch fa-spin"&gt;&lt;/i&gt;</p>
+      <p>&lt;i class="fas fa-sync-alt fa-spin"&gt;&lt;/i&gt;</p>
+      <p>&lt;i class="fas fa-cog fa-spin&gt;&lt;/i&gt;
+      <p>&lt;i class="fas fa-cog fa-pulse"&gt;&lt;/i&gt;
+      <p>&lt;i class="fas fa-spinner fa-pulse"&gt;&lt;/i&gt;
+      <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+      </div>
+    </div>
+    <a name="6"></a>
+      <div class="topic">
+        <h2 class="parts">Lists</h2>
+        <p>The list-style-type allows you to control the shape or appearance of the marker.The list-style-position specifies whether a long point that wraps to a second line should align with the first line or start underneath the start of the marker.The list-style serves as shorthand for the preceding properties.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/2-6.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+              <p>&lt;ul style = "list-style-type:circle; list-stlye-position:inside;"&gt;</p>
+                 <p>&lt;li&gt;Aradhana&lt;/li&gt;</p>
+                 <p>&lt;li&gt;Nanditha&lt;/li&gt;</p>
+                 <p>&lt;li&gt;Riya&lt;/li&gt;</p>
+                  <p>&lt;/ul&gt;</p>
+                  <p>&lt;ol style = "list-style-type:decimal; list-stlye-position:outside;"&gt;</p>
+                 <p>&lt;li&gt;Aradhana&lt;/li&gt;</p>
+                 <p>&lt;li&gt;Nanditha&lt;/li&gt;</p>
+                 <p>&lt;li&gt;Riya&lt;/li&gt;</p>
+                  <p>&lt;/ol&gt;</p>
+                    <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+
+      </div>
+    </div>
+    <a name="7"></a>
+      <div class="topic">
+        <h2 class="parts">Tables</h2>
+        <p>The border-collapse specifies whether the browser should control the appearance of the adjacent borders that touch each other or whether each cell should maintain its style.The border-spacing specifies the width that should appear between table cells.</p>
+        <div class="example">
+          <h3>Example:</h3>
+          <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/2-7.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+          <p>&lt;style&gt;</p>
+          <p>table, td, th {</p>
+  <p>border: 1px solid #ddd;</p>
+  <p>text-align: left;</p>
+<p>}</p>
+
+<p>table {</p>
+  <p>border-collapse: collapse;</p>
+  <p>width: 100%;</p>
+<p>}</p>
+
+<p>th, td {</p>
+<p>padding: 15px;</p>
+<p>}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;table&gt;</p>
+  <p>&lt;tr&gt;</p>
+    <p>&lt;th&gt;Name&lt;/th&gt;</p>
+    <p>&lt;th&gt;ID&lt;/th&gt;</p>
+  <p>&lt;/tr&gt;</p>
+  <p>&lt;tr&gt;</p>
+    <p>&lt;td&gt;Aradhana&lt;/td&gt;</p>
+    <p>&lt;td&gt;B118016&lt;/td&gt;</p>
+  <p>&lt;/tr&gt;</p>
+  <p>&lt;tr&gt;</p>
+    <p>&lt;td&gt;Nanditha&lt;/td&gt;</p>
+    <p>&lt;td&gt;B118028&lt;/td&gt;</p>
+  <p>&lt;/tr&gt;</p>
+  <p>&lt;/table&gt;</p>
+          <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+
+
+
+
+      </div>
+    </div>
+    <a name="8"></a>
+      <div class="topic">
+        <h2 class="parts">Display</h2>
+        <p>Every element on a web page is a rectangular box. The display property in CSS determines just how that rectangular box behaves. There are only a handful of values that are used</p>
+        <div class="example">
+          <h3>Example:</h3>
+          <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/2-8.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+          <p>&lt;head&gt;</p>
+<p>&lt;style&gt;</p>
+<p>p {color: red;}</p>
+<p>p.ex3 {display: block;}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;div&gt;</p>
+ <p>&lt;p class="ex3">HELLO WORLD!&lt;/p&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;/body&gt;</p>
+<p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+
+
+      </div>
+    </div>
+    <a name="9"></a>
+      <div class="topic">
+        <h2 class="parts">Position</h2>
+        <p>CSS helps you to position your HTML element. You can put any HTML element at whatever location you like.</p>
+        <div class="example">
+          <h3>Example</h3>
+          <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/2-9.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+          <p>&lt;body&gt;</p>
+      <p>&lt;div style = "position:relative; left:60px; top:4px; background-color:blue;"&gt;</p>
+         <p>This is a paragraph.</p>
+      <p>&lt;/div&gt;</p>
+   <p>&lt;/body&gt;</p>
+   <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+      </div>
+    </div>
+    <a name="10"></a>
+      <div class="topic">
+        <h2 class="parts">Overflow</h2>
+        <p>The overflow property determines how content which overflows its element's content area should be handled.</p>
+        <div class="example">
+          <h3>Example:</h3>
+  <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/2-10.png" style="width:250px;height:250px;float:left;"> 
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+        <p>&lt;head&gt;</p>
+<p>&lt;style&gt;</p>
+<p>div.ex1{</p>
+  <p>background-color: green;</p>
+  <p>width: 110px;</p>
+  <p>height: 110px;</p>
+  <p>overflow: scroll;</p>
+<p>}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;h2&gt;scroll&lt;/h2&gt;</p>
+<p>&lt;div class="ex1"&gt;CSS helps to position the HTML element.You can put any HTML element at whatever location you like.&lt;/div&gt;</p>
+<p>&lt;/body&gt;</p>
+<p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="back">
+        <a href="index.html">&gt; Home &lt;</a>
+    </div>
+  <footer>© 2020 Aradhana Das & Nanditha Garge. All rights reserved</footer>
+</body>
+</html>

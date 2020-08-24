@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <header>
+        <link rel="stylesheet" type="text/css" href="part-2.css">
+<img src="images/iiit.png" alt="Smiley face" style="float:left;width:150px;height:140px;">
+  <h1 class="part">CSS PART-3 </h1>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Part-3</title>
+  <link rel="stylesheet" href="part-2.css">
+</header>
+</head>
+<body>
+  <div class="topnav">
+    <a href="#1">Float</a>
+    <a href="#2">Inline Block</a>
+    <a href="#3">Alignment</a>
+    <a href="#4">Combinators</a>
+    <a href="#5">Pseudo-class</a>
+    <a href="#6">Pseudo-elements</a>
+    <a href="#7">Opacity</a>
+    <a href="#8">Navigation Bar</a>
+    <a href="#9">Dropdown</a>
+    <a href="#10">Image Gallery</a>
+</div>
+  <div class="container">
+    <div class="skills">
+      <a name="1"></a>
+      <div class="topic">
+        <h2 class="parts">Float</h2>
+        <p>The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. The element is removed from the normal flow of the page, though still remaining a part of the flow.</p>
+        <div class="example">
+          <h3>Example:</h3>
+            <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/3-1.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+          <p>&lt;head&gt;</p>
+<p>&lt;style&gt;</p>
+<p>.flexbox {</p>
+  <p>display: flex;</p>
+  <p>flex-wrap: nowrap;</p>
+  <p>background-color: Green;</p>
+<p>}</p>
+
+<p>.flexbox .box {</p>
+  <p>background-color: #f1f1f1;</p>
+  <p>width: 100%;</p>
+  <p>margin: 15px;</p>
+  <p>line-height: 60px;</p>
+  <p>font-size: 40px;</p>
+<p>}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+
+<p>&lt;div class="flexbox"&gt;</p>
+  <p>&lt;div class="box"&gt;Box 1 - This ia a paragraph&lt;/div&gt;</p>
+  <p>&lt;div class="box"&gt;Box 2 - This is a paragraph.&lt;/div&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;/body&gt;</p>
+
+
+      <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+      </div>
+    </div>
+    <a name="2"></a>
+      <div class="topic">
+        <h2 class="parts">Inline Block</h2>
+        <p>The CSS display: inline-block is a combination of both inline and block-level features.The inline-block responds to width and height properties.</p>
+                <div class="example">
+          <h3>Example:</h3>
+            <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/3-2.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+          <p>&lt;head&gt;</p>
+<p>&lt;style&gt;</p>
+<p>span.b{</p>
+  <p>display: inline-block;</p>
+  <p>padding: 5px;</p>
+  <p>border: 1px solid red;</p>
+  <p>background-color: lightblue;</p>
+<p>}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;div&gt;This is an inline block.&lt;span class="b"&gt;BLOCK-1&lt;/span&gt; &lt;span class="b"&gt;BLOCK-2&lt;/span&gt;&lt;/div&gt;</p>
+
+<p>&lt;/body&gt;</p>
+
+
+      <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+      </div>
+      </div>
+      <a name="3"></a>
+      <div class="topic">
+        <h2 class="parts">Alignment</h2>
+        <p>The Layout in CSS is used to control the flow of element inside another element. It sets the position of element in the web page. The position of element can be set by using horizontal and vertical alignment. </p>
+                <div class="example">
+          <h3>Example:</h3>
+            <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/3-3.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+          <p>&lt;head&gt;</p>
+<p>&lt;style&gt;</p>
+<p>.center {</p>
+  <p>padding: 70px 0;</p>
+  <p>border: 3px solid yellow;</p>
+  <p>text-align: center;</p>
+  <p>background:lightblue;</p>
+<p>}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;div class="center"&gt;
+  <p>&lt;p&gt;HELLO WORLD!!&lt;/p&gt;</p>
+<p>&lt;/div&gt;</p>
+
+<p>&lt;/body&gt;</p>
+
+      <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+      </div>
+      </div>
+      <a name="4"></a>
+      <div class="topic">
+        <h2 class="parts">Combinators</h2>
+        <p>A combinator is something that explains the relationship between the selectors. A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.</p>
+                <div class="example">
+          <h3>Example:</h3>
+            <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/3-4.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+          <p>&lt;head&gt;</p>
+<p>&lt;style&gt;</p>
+<p>div p {</p>
+  <p>background-color: lightblue;</p>
+<p>}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+
+<p>&lt;div&gt;</p>
+  <p>&lt;p&gt;Text in the div.&lt;/p&gt;</p>
+<p>&lt;/div&gt;</p>
+
+<p>&lt;p&gt;Text not in the div.&lt;/p&gt;</p>
+<p>&lt;/body&gt;</p>
+
+
+      <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+      </div>
+      </div>
+      <a name="5"></a>
+      <div class="topic">
+        <h2 class="parts">Pseudo-class</h2>
+        <p>A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element. For example,:hover can be used to change a button's color when the user's pointer hovers over it. </p>
+                <div class="example">
+          <h3>Example:</h3>
+            <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/3-5.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+          <p>&lt;head&gt;</p>
+<p>&lt;style&gt;</p>
+<p>a.highlight:hover {</p>
+  <p>color: green;</p>
+<p>}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;
+<p>&lt;body&gt;</p>
+
+<p>&lt;p&gt;&lt;a class="highlight" href="blank.asp"&gt;Hello World!!!&lt;/a&gt;&lt;/p&gt;</p>
+
+<p>&lt;/body&gt;</p>
+
+
+      <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+      </div>
+      </div>
+      <a name="6"></a>
+      <div class="topic">
+        <h2 class="parts">Pseudo-elements</h2>
+        <p>A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected elements.For example,first-line can be used to change the font of the first line of a paragraph. </p>
+                <div class="example">
+          <h3>Example:</h3>
+            <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/3-6.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+          <p>&lt;head&gt;</p>
+<p>&lt;style&gt;</p>
+<p>p::first-letter {</p>
+  <p>color: YELLOW;</p>
+  <p>font-size: xx-large;</p>
+<p>}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+
+<p>&lt;p&gt;HELLO WORLD!!!&lt;/p&gt;</p>
+
+<p>&lt;/body&gt;</p>
+
+
+      <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+      </div>
+      </div>
+      <a name="7"></a>
+      <div class="topic">
+        <h2 class="parts">Opacity</h2>
+        <p>The CSS opacity property is used to specify the transparency of an element.We can say that it specifies the clarity of the image.</p>
+                <div class="example">
+          <h3>Example:</h3>
+            <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/3-7.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+          <p>&lt;head&gt;</p>
+<p>&lt;style&gt;</p>
+<p>img {</p>
+  <p>opacity: 0.4;</p>
+<p>}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;p&gt;Image with 40% opacity:&lt;/p&gt;</p>
+<p>&lt;img src="jerry22.png" alt="Jerry" width="150" height="120"&gt;</p>
+
+<p>&lt;/body&gt;</p>
+
+
+      <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+      </div>
+      </div>
+      <a name="8"></a>
+      <div class="topic">
+        <h2 class="parts">Navigation Bar</h2>
+        <p>A navigation bar includes the back and forward buttons, as well as the Location bar where URLs are entered.</p>
+                <div class="example">
+          <h3>Example:</h3>
+            <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/3-8.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+<p>&lt;head&gt;</p>
+<p>&lt;style&gt;</p>
+<p>ul {</p>
+  <p>margin:10px</p>
+  <p>padding: 5px;</p>
+<p>}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;ul&gt;</p>
+ <p>&lt;li&gt;&lt;a href="https://www.iiit-bh.ac.in/admission"&gt;Admission&lt;/a&gt;&lt;/li&gt;
+<p>&lt;li&gt;&lt;a href="https://www.iiit-bh.ac.in/academics"&gt;Academics&lt;/a&gt;&lt;/li&gt;
+  <p>&lt;li&gt;&lt;a href="https://www.iiit-bh.ac.in/research"&gt;Research&lt;/a&gt;&lt;/li&gt;
+<p>&lt;/ul&gt;</p>
+
+<p>&lt;/body&gt;</p>
+
+
+
+      <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+      </div>
+      </div>
+      <a name="9"></a>
+      <div class="topic">
+        <h2 class="parts">Dropdowns</h2>
+        <p>The . dropdown-content class holds the actual dropdown content. It is hidden by default, and will be displayed on hover.</p>
+                <div class="example">
+          <h3>Example:</h3>
+            <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/3-9.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+          <p>&lt;head&gt;</p>
+<p>&lt;style&gt;</p>
+<p>.dropbtn {</p>
+  <p>background-color: #4CAF50;</p>
+  <p>min width:150px;</p>
+<p>}</p>
+
+<p>.dropdown {</p>
+  <p>position: relative;</p>
+  <p>display: inline-block;</p>
+<p>}</p>
+
+<p>.dropdown-content {</p>
+  <p>display: none;</p>
+  <p>position: absolute;</p>
+<p>}</p>
+
+<p>.dropdown-content a {</p>
+  <p>color: black;</p>
+  <p>padding:20px 20px;</p>
+  <p>display: block;</p>
+<p>}</p>
+<p>.dropdown:hover .dropdown-content {</p>
+  <p>display: block;</p>
+<p>}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;div class="dropdown"&gt;</p>
+  <p>&lt;button class="dropbtn"&gt;Dropdown&lt;/button&gt;
+  <p>&lt;div class="dropdown-content"&gt;</p>
+  <p>&lt;a href="#"&gt;Name&lt;/a&gt;</p>
+  <p>&lt;a href="#"&gt;ID&lt;/a&gt;
+  <p>&lt;a href="#"&gt;Branch&lt;/a&gt;
+  <p>&lt;/div&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;/body&gt;</p>
+
+
+      <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+      </div>
+      </div>
+      <a name="10"></a>
+      <div class="topic">
+        <h2 class="parts">Image Gallery</h2>
+        <p>Image Gallery is used to store and display collection of pictures. This example create a responsive Image Gallery using HTML and CSS. Steps 1: Creating a basic gallery structure. Each gallery contains number of div section.Each div section contains an image and its description.</p>
+        <div class="example">
+          <h3>Example:</h3>
+            <div class="card">
+      <div class="card-inner">
+        <div class="card-back">
+          <img src= "images/3-10.png" style="width:250px;height:250px;float:left;">
+        </div>
+
+        <div class="card-front">
+          <h1 class="position">SOLUTION</h1>
+        </div>
+      </div>
+    </div>
+          <p>&lt;head&gt;</p>
+<p>&lt;style&gt;</p>
+<p>div.gallery {</p>
+  <p>margin: 4px;</p>
+  <p>border: 3px solid ;</p>
+  <p>float: left;</p>
+  <p>width: 100px;</p>
+<p>}</p>
+<p>div.gallery img {</p>
+  <p>width: 100%;</p>
+  <p>height:auto;</p>
+<p>}</p>
+
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+
+<p>&lt;div class="gallery"&gt;</p>
+    <p>&lt;img src="images/jerry22.jpg" alt="Jerry" width="500" height="500"&gt;</p>
+  <p>&lt;/a&gt;</p>
+<p>&lt;/div&gt;</p>
+
+<p>&lt;/body&gt;
+
+
+      <p><a href="https://codepen.io/pen/?__cf_chl_jschl_tk__=988be1a2958ca9c6f8c0a404fa28dc2785c8cc96-1597497636-0-AVpafCtGxDJpm9ANeqHyqAfe5iFezhngGrOS909jYWskHdsFg5eSD7j6d19Wq0Jn93CnAxW_az3j_64gXezZqFptmBT8XNmKgiTsMjrkoMlYx_UWvckc4F9uHKaOnzPIMA2sj9brS2sepHoG3KojHQfXWqDDnbws5g5ccUHdXc1NfBgKwqzgluBKsxkJRPkZclVdf2_SFdBaG_tgmAnqqrsRgL5hTyKAnszV0H3xQ-3f8kWXTj43wN9BxLma4LRJMLfSybQYrrhE0eBtcLFL7N96VBAzpWOmQOu0re9irZ44isHJP8cJmo_A84zi8JvyVZkTCSaPmes7O4qOS8uMdvs">Try yourself</a></p>
+
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="back">
+        <a href="index.html">&gt; Home &lt;</a>
+    </div>
+  <footer>© 2020 Aradhana Das & Nanditha Garge. All rights reserved</footer>
+</body>
+</html>
